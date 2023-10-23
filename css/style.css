@@ -7,6 +7,20 @@ header, main, footer{
     color: #000;
 }
 
+/*Tatt fra
+https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/css/style.css*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 200%;
+}
+
+.logo{
+    text-decoration: none;
+    font-weight: 900;
+}
+
 #grid-container{
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -14,11 +28,17 @@ header, main, footer{
 
 .flex-container{
     display:flex;
+    justify-content: space-between;
 }
 
-.reklame{
+.flex-row{
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.flex-column{
+    flex-direction: column;
+    flex: wrap;
 }
 
 header{
@@ -34,11 +54,6 @@ footer{
     background-color: rgb(165, 42, 42);
     text-align: center;
     font-size: 10vw;
-}
-
-.logo{
-    text-decoration: none;
-    font-weight: 900;
 }
 
 .liten-bilde{
