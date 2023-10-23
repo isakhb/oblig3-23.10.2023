@@ -46,6 +46,15 @@ header nav {
     flex-wrap: wrap;
 }
 
+.produkt-tekst{
+    margin: 5px;
+    font-size: 1.3rem;
+}
+
+.produkt-bilder{
+    align-items: start;
+}
+
 header{
     grid-area: header;
 }
@@ -77,6 +86,7 @@ https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/css/
     background-color: #a4a4a4;
     color: #000;
     font-weight: 900;
+    margin-left: auto;
 }
 
 .meny {
