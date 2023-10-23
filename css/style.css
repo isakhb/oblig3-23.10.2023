@@ -1,0 +1,95 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    color: #000;
+}
+
+header, main, footer{
+    padding: 1rem;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(165, 42, 42);
+    text-align: center;
+    font-size: 10vw;
+}
+
+.logo{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.liten-bilde{
+    width: 25%;
+    height: auto;
+}
+
+/*Alle linjene under hentet fra:
+https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/css/style.css
+.meny = .navbar | .meny-resp = .responsive | #meny-ikon = #ham | btn = black-btn*/
+
+.btn{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #a4a4a4;
+    color: #000;
+    font-weight: 400;
+}
+
+.meny {
+    display: none;
+}
+
+.meny-resp {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.meny-resp a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    /* Endrer grid-malen for bredere skjermer
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    } */
+
+    .meny {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    #meny-ikon, .fa-magnifying-glass, .fa-user, .fa-basket-shopping{
+        display: none;
+    }
+}

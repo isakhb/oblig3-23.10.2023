@@ -10,44 +10,68 @@
         <title>Skobutikk</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <i id="meny-ikon" class="fa-solid fa-bars"></i>
-                <!--<ul class="meny">
-                    <li><a href="kategori.html">Dame</a></li>
-                    <li><a href="kategori.html">Herre</a></li>
-                    <li><a href="kategori.html">Barn</a></li>
-                    <li><a href="kategori.html">Skopleie</a></li>
-                    <li><a href="kategori.html">Tilbehør</a></li>
-                </ul> -->
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#">Logo</a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-            </nav>
-        </header>
+        <div id="grid-container">
+            <header>
+                <nav>
+                    <i id="meny-ikon" class="fa-solid fa-bars"></i>
+                    <ul class="meny">
+                        <li><a href="kategori.html">Dame</a></li>
+                        <li><a href="kategori.html">Herre</a></li>
+                        <li><a href="kategori.html">Barn</a></li>
+                        <li><a href="kategori.html">Skopleie</a></li>
+                        <li><a href="kategori.html">Tilbehør</a></li>
+                    </ul>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="logo">Logo</a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                </nav>
+            </header>
 
-        <main>
-            <section>
-                <article>
-                    <a href="#" class="btn">30% SALG</a>
-                    <img src="#" alt="Salg">
-                </article>
-            </section>
-        </main>
+            <main>
+                <section>
+                    <article>
+                        <a href="kategori.html"><img style="width: 100%;" src="https://placehold.co/600x400" alt="Salg">30% SALG</a>
+                        <a href="kategori.html" class="reklame"><img style="width: 100%;" src="https://placehold.co/400x600" alt="Sesongvarer">Sesongvarer</a>
+                        <a href="kategori.html" class="reklame"><img style="width: 100%;" src="https://placehold.co/400x600" alt="Støvler">Støvler</a>
+                    </article>
+                </section>
+                
+                <section>
+                    <h2>Populære kategorier:</h2>
+                    <article>
+                        <h3>Trendy nå:</h3>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                    </article>
+                    <article>
+                        <h3>Nyheter:</h3>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </footer>
+        </div>
 
-        <!--Hele "<script>" og hamburgermenyen er fra
+        <!--Hele "<script>"-tag og hamburgermenyen er fra
         https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/index.html-->
-        <!--<script>
+        <script>
             let x = document.querySelector(".meny")
             document.getElementById("meny-ikon").addEventListener("click", (e) => {
                 if (x.className === "meny") {
-                    x.className += " responsive";
+                    x.className += " meny-resp";
                 } else {
                     x.className = "meny"
                 }
             })
-        </script>-->
+        </script>
 
     </body>
 </html>
