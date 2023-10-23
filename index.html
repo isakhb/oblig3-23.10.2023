@@ -3,22 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
         <title>Skobutikk</title>
     </head>
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="#">Dame</a></li>
-                    <li><a href="#">Herre</a></li>
-                    <li><a href="#">Barn</a></li>
-                    <li><a href="#">Skopleie</a></li>
-                    <li><a href="#">Tilbehør</a></li>
-                    <li><a href="#">Søk</a></li>
-                    <li><a href="#">Logg inn</a></li>
-                    <li><a href="#">Handlekurv</a></li>
-                </ul>
+                <i id="meny-ikon" class="fa-solid fa-bars"></i>
+                <!--<ul class="meny">
+                    <li><a href="kategori.html">Dame</a></li>
+                    <li><a href="kategori.html">Herre</a></li>
+                    <li><a href="kategori.html">Barn</a></li>
+                    <li><a href="kategori.html">Skopleie</a></li>
+                    <li><a href="kategori.html">Tilbehør</a></li>
+                </ul> -->
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#">Logo</a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
             </nav>
         </header>
 
@@ -30,5 +35,19 @@
                 </article>
             </section>
         </main>
+
+        <!--Hele "<script>" og hamburgermenyen er fra
+        https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/index.html-->
+        <!--<script>
+            let x = document.querySelector(".meny")
+            document.getElementById("meny-ikon").addEventListener("click", (e) => {
+                if (x.className === "meny") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "meny"
+                }
+            })
+        </script>-->
+
     </body>
 </html>
