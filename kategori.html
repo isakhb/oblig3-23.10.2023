@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+        <link href="css/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>Skobutikk - </title>
+    </head>
+    <body>
+        <div id="grid-container">
+            <header>
+                <nav>
+                    <i id="meny-ikon" class="fa-solid fa-bars"></i>
+                    <ul class="meny">
+                        <li><a href="kategori.html">Dame</a></li>
+                        <li><a href="kategori.html">Herre</a></li>
+                        <li><a href="kategori.html">Barn</a></li>
+                        <li><a href="kategori.html">Skopleie</a></li>
+                        <li><a href="kategori.html">Tilbehør</a></li>
+                    </ul>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="index.html" class="logo">Logo</a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                </nav>
+            </header>
+
+            <main>
+                <p>Hjem / <b>Dame</b></p>
+                <p class="btn">Sorter</p>
+                <p class="btn">Filter</p>
+                <section>
+                    <h2>Populære kategorier:</h2>
+                    <article>
+                        <h3>Støvler:</h3>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                    </article>
+                    <article>
+                        <h3>Joggesko:</h3>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                    </article>
+                    <article>
+                        <h3>Tøfler:</h3>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                    </article>
+                    <article>
+                        <h3>Vintersko:</h3>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                        <a href="produkt.html"><img class="liten-bilde" src="https://placehold.co/400x600" alt="Bilde av sko"></a>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </footer>
+        </div>
+
+        <!--Hele "<script>"-tag og hamburgermenyen er fra
+        https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/index.html-->
+        <script>
+            let x = document.querySelector(".meny")
+            document.getElementById("meny-ikon").addEventListener("click", (e) => {
+                if (x.className === "meny") {
+                    x.className += " meny-resp";
+                } else {
+                    x.className = "meny"
+                }
+            })
+        </script>
+
+    </body>
+</html>

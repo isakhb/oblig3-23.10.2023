@@ -1,17 +1,24 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-html{
-    color: #000;
-}
 
 header, main, footer{
     padding: 1rem;
+    color: #000;
 }
 
 #grid-container{
     display: grid;
     grid-template-areas: "header" "main" "footer";
+}
+
+.flex-container{
+    display:flex;
+}
+
+.reklame{
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 header{
@@ -45,11 +52,11 @@ https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/css/
 
 .btn{
     display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: none;
     background-color: #a4a4a4;
     color: #000;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .meny {
