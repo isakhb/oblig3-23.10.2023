@@ -21,6 +21,11 @@ header nav {
     font-weight: 900;
 }
 
+.row-bilder{
+    flex: 50%;
+    width: 100%;
+}
+
 #grid-container{
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -38,7 +43,7 @@ header nav {
 
 .flex-column{
     flex-direction: column;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 
 header{
@@ -98,10 +103,10 @@ https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/css/
 }
 
 @media only screen and (min-width: 600px) {
-    /* Endrer grid-malen for bredere skjermer
+    Endrer grid-malen for bredere skjermer
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
-    } */
+    } 
 
     .meny {
         display: flex;
