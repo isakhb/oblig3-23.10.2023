@@ -136,4 +136,8 @@ https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/FLEX-OG-GRID/css/
     #meny-ikon, .fa-magnifying-glass, .fa-user, .fa-basket-shopping{
         display: none;
     }
+
+    .logo{
+        order: 1;
+    }
 }
